@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kejutan Spesial!</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😇</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Pacifico&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+    
+    <style>
+        :root {
+            --pink-light: #FFF1F2; /* Pink-50 */
+            --pink-base: #F472B6;  /* Pink-400 */
+            --pink-dark: #BE185D;  /* Pink-700 */
+            --white: #ffffff;
+            --text-dark: #374151; /* Gray-700 */
+            --text-light: #6B7280; /* Gray-500 */
+            
+            --font-main: 'Poppins', sans-serif;
+            --font-fancy: 'Pacifico', cursive;
+            --font-script: 'Dancing Script', cursive;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden; /* Mencegah scroll */
+        }
+
+        body {
+            font-family: var(--font-main);
+            background-color: var(--pink-light);
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.5s;
+            /* Latar belakang SVG Sayap Bidadari */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23FBCFE8' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H9v4H8v-4H0v-1h8v-9H0v-1h8v-9H0v-1h8v-9H0v-1h8v-9H0v-1h8v-9H0v-1h8v-9H0v-1h8v-9H0v-1h8V9H0V8h8V0h1v8h9V0h1v8h9V0h1v8h9V0h1v8h9V0h1v8h9V0h1v8h9V0h1v8h9V0h1v8h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm-9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* Base Card untuk Welcome & Loading */
+        .card-container {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity 0.5s, transform 0.5s;
+        }
+
+        .card {
+            background-color: var(--white);
+            padding: 2rem 2.5rem;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 400px;
+            border: 1px solid var(--pink-base);
+        }
+
+        /* ===================================================================
+           WELCOME SCREEN (#welcome-screen)
+           =================================================================== */
+        #welcome-screen .card h2 {
+            font-family: var(--font-fancy);
+            font-size: 2rem;
+            color: var(--pink-dark);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Input Tahun Lahir (BARU: Dropdown) */
+        .year-input-container {
+            margin-bottom: 1rem;
+        }
+        .year-input-container label {
+            display: block;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+        #birthyear-select {
+            font-family: var(--font-main);
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 10px;
+            width: 100%;
+            border: 2px solid var(--pink-light);
+            border-radius: 8px;
+            color: var(--pink-dark);
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: var(--white);
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23F472B6%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 0.8em;
+            padding-right: 2.5rem; /* Ruang untuk panah */
+        }
+        #birthyear-select:focus {
+            border-color: var(--pink-base);
+            box-shadow: 0 0 10px var(--pink-base);
+        }
+        #birthyear-select option[disabled] {
+            color: var(--text-light);
+        }
+        
+        /* Animasi Malaikat */
+        #clickable-element {
+            margin: 1rem auto 0;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        #clickable-element:hover {
+            transform: scale(1.1);
+        }
+        
+        .card-instruction {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 0.5rem; /* Didekatkan ke Lottie */
+        }
+        #year-error {
+            color: #e11d48; /* Red */
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none; /* Sembunyi by default */
+        }
+
+        /* ===================================================================
+           LOADING SCREEN (#loading-screen)
+           =================================================================== */
+        #loading-screen p {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-top: 1rem;
+            color: var(--pink-dark);
+            font-family: var(--font-fancy);
+        }
+
+        /* ===================================================================
+           KONTEN UTAMA (STORY BOOK)
+           =================================================================== */
+        #main-content {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.5s 0.3s, transform 0.5s 0.3s;
+        }
+        
+        .story-container {
+            background-color: var(--white);
+            width: 90vw;
+            height: 90vh;
+            max-width: 500px;
+            max-height: 700px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 2rem;
+            border: 2px solid var(--white);
+            background-clip: padding-box;
+            outline: 2px solid var(--pink-base);
+        }
+
+        #story-header {
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 2px dashed var(--pink-light);
+            margin: 0 -2rem 1rem;
+            padding: 0 2rem 1rem;
+        }
+        #story-header h2 {
+            font-family: var(--font-script);
+            font-size: 2rem;
+            color: var(--pink-dark);
+        }
+
+        #story-content {
+            flex-grow: 1;
+            overflow-y: auto;
+            overflow-x: hidden;
+            /* Custom scrollbar */
+            scrollbar-width: thin;
+            scrollbar-color: var(--pink-base) var(--pink-light);
+        }
+        #story-content::-webkit-scrollbar {
+            width: 8px;
+        }
+        #story-content::-webkit-scrollbar-track {
+            background: var(--pink-light);
+            border-radius: 10px;
+        }
+        #story-content::-webkit-scrollbar-thumb {
+            background-color: var(--pink-base);
+            border-radius: 10px;
+            border: 2px solid var(--pink-light);
+        }
+        
+        /* Konten di dalam Story */
+        .story-step {
+            animation: fadeIn 0.6s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Tampilan: Ucapan */
+        .greeting-view {
+            text-align: center;
+            padding-top: 2rem;
+        }
+        .greeting-view h3 {
+            font-family: var(--font-fancy);
+            font-size: 2.2rem;
+            color: var(--pink-dark);
+            margin-bottom: 1rem;
+        }
+        .greeting-view p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            min-height: 50px; /* Ruang untuk typewriter */
+        }
+        .greeting-view #personal-signature {
+            font-family: var(--font-script);
+            font-size: 1.5rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+        }
+        .cursor { /* Kursor typewriter */
+            opacity: 1;
+            color: var(--pink-base);
+            animation: blink 0.7s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; } 50% { opacity: 0; }
+        }
+
+        /* Tampilan: Timeline */
+        .timeline-view h3 {
+            font-family: var(--font-fancy);
+            font-size: 1.8rem;
+            color: var(--pink-dark);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .timeline-view img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 2px solid var(--pink-light);
+        }
+        .timeline-view p {
+            font-size: 1rem;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        /* Tampilan: Galeri */
+        .gallery-view h3 {
+            font-family: var(--font-fancy);
+            font-size: 1.8rem;
+            color: var(--pink-dark);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid var(--pink-light);
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--pink-base);
+        }
+
+        /* Navigasi Story */
+        .story-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            margin: 1rem -2rem 0;
+            padding: 1rem 2rem 0;
+            border-top: 2px dashed var(--pink-light);
+        }
+        .story-navigation button {
+            background-color: var(--pink-base);
+            color: var(--white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            visibility: visible;
+        }
+        .story-navigation button:hover {
+            background-color: var(--pink-dark);
+            transform: scale(1.1);
+        }
+        .story-navigation button:disabled {
+            background-color: #E5E7EB; /* Gray-200 */
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+        .story-navigation button.hidden {
+            visibility: hidden;
+        }
+
+        /* Tombol Musik */
+        #music-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--white);
+            border: 2px solid var(--pink-base);
+            color: var(--pink-base);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        #music-toggle:hover {
+            background-color: var(--pink-base);
+            color: var(--white);
+        }
+        #music-toggle.playing {
+            background-color: var(--pink-base);
+            color: var(--white);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 var(--pink-base); }
+            70% { box-shadow: 0 0 0 10px rgba(244, 114, 182, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(244, 114, 182, 0); }
+        }
+
+        /* Lightbox (Image Popup) */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.9);
+        }
+        .lightbox-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            animation: zoom 0.3s;
+        }
+        @keyframes zoom {
+            from {transform: scale(0.8);}
+            to {transform: scale(1);}
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        /* Konfeti */
+        .confetti {
+            position: fixed;
+            top: -20px;
+            width: 10px;
+            height: 10px;
+            opacity: 0.8;
+            z-index: 3000;
+            pointer-events: none;
+            animation: fall 6s linear infinite;
+        }
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="welcome-screen" class="card-container">
+        <div class="card">
+            <h2>Kejutan Spesial!</h2>
+            
+            <div class="year-input-container">
+                <label>Sepertinya aku lupa tahun lahirmu...</label>
+                <select id="birthyear-select">
+                    <option value="" disabled selected>Pilih tahun...</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                </select>
+                <p id="year-error">Kamu harus pilih tahun dulu!</p>
+            </div>
+
+            <div id="clickable-element">
+                <dotlottie-wc
+                    src="https://lottie.host/e3b9c81b-2b4f-446b-8b1b-561c4d4f64c6/s8UQk3Vp4j.lottie"
+                    style="width: 150px; height: 150px; cursor: pointer;"
+                    speed="1"
+                    autoplay
+                    loop>
+                </dotlottie-wc>
+            </div>
+            <p class="card-instruction">Sentuh 😇 untuk membuka!</p>
+        </div>
+    </div>
+
+    <div id="loading-screen" class="card-container" style="display: none; opacity: 0;">
+        <div class="card">
+            <dotlottie-wc
+                src="https://lottie.host/0c1f5a6b-9b4b-4b8b-87b7-1c3905f0e1b6/VMAa1g2Z8E.lottie"
+                style="width: 200px; height: 200px;"
+                speed="1"
+                autoplay
+                loop>
+            </dotlottie-wc>
+            <p>Mempersiapkan cerita...</p>
+        </div>
+    </div>
+    
+    <div id="main-content" style="display: none;">
+        <audio id="audio-element" preload="auto" loop></audio>
+        
+        <button id="music-toggle" aria-label="Play or Pause Music">🎵</button>
+
+        <div class="story-container">
+            <header id="story-header">
+                <h2 id="story-title-text">Sebuah Cerita</h2>
+            </header>
+
+            <div id="story-content">
+                </div>
+
+            <nav class="story-navigation">
+                <button id="prev-btn" aria-label="Previous Page">«</button>
+                <button id="next-btn" aria-label="Next Page">»</button>
+            </nav>
+        </div>
+    </div>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-label="Image Viewer">
+        <span class="lightbox-close" aria-label="Close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Full size image">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Global state
+            const appState = {
+                content: {},
+                birthYear: 2005, // Default
+                storySteps: [],
+                currentStep: 0,
+                audioElement: null
+            };
+
+            // Kumpulan Elemen DOM
+            const elements = {
+                welcomeScreen: document.getElementById('welcome-screen'),
+                yearSelect: document.getElementById('birthyear-select'),
+                yearError: document.getElementById('year-error'),
+                clickableElement: document.getElementById('clickable-element'),
+                loadingScreen: document.getElementById('loading-screen'),
+                mainContent: document.getElementById('main-content'),
+                storyTitle: document.getElementById('story-title-text'),
+                storyContent: document.getElementById('story-content'),
+                prevBtn: document.getElementById('prev-btn'),
+                nextBtn: document.getElementById('next-btn'),
+                musicToggle: document.getElementById('music-toggle'),
+                lightbox: document.getElementById('lightbox'),
+                lightboxImg: document.getElementById('lightbox-img'),
+                lightboxClose: document.querySelector('.lightbox-close'),
+            };
+
+            // ===================================================================
+            // UTILITIES (Fungsi Bantuan)
+            // ===================================================================
+            
+            const utils = {
+                async typewriter(element, text, delay = 60) {
+                    if (!element) return;
+                    element.innerHTML = '';
+                    const textNode = document.createTextNode('');
+                    const cursorSpan = document.createElement('span');
+                    cursorSpan.className = 'cursor';
+                    cursorSpan.textContent = '|';
+                    element.appendChild(textNode);
+                    element.appendChild(cursorSpan);
+                    for (let i = 0; i < text.length; i++) {
+                        textNode.nodeValue += text[i];
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                    }
+                    setTimeout(() => cursorSpan.remove(), 500);
+                },
+
+                triggerConfetti() {
+                    const confettiCount = 50;
+                    const colors = ['#F472B6', '#F9A8D4', '#FFF1F2', '#ffffff', '#BE185D'];
+                    for (let i = 0; i < confettiCount; i++) {
+                        const confetti = document.createElement('div');
+                        confetti.className = 'confetti';
+                        confetti.style.left = `${Math.random() * 100}vw`;
+                        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                        confetti.style.animationDelay = `${Math.random() * 2}s`;
+                        confetti.style.animationDuration = `${Math.random() * 3 + 4}s`;
+                        document.body.appendChild(confetti);
+                        setTimeout(() => confetti?.remove(), 8000);
+                    }
+                },
+
+                createBgParticles(count = 15) {
+                    const shapes = ['💖', '✨', '🌟', '😇', '🎀', '🤍']; // Tema Malaikat/Hati
+                    const bgAnimation = document.createElement('div');
+                    bgAnimation.style.cssText = "position:fixed; top:0; left:0; width:100%; height:100%; z-index:-1; overflow:hidden;";
+                    document.body.appendChild(bgAnimation);
+
+                    for (let i = 0; i < count; i++) {
+                        const particle = document.createElement('div');
+                        particle.innerHTML = shapes[Math.floor(Math.random() * shapes.length)];
+                        particle.style.cssText = `
+                            position: absolute;
+                            opacity: 0;
+                            font-size: ${Math.random() * 30 + 20}px;
+                            left: ${Math.random() * 100}vw;
+                            animation: rise ${Math.random() * 15 + 20}s infinite linear;
+                            animation-delay: ${Math.random() * 10}s;
+                        `;
+                        bgAnimation.appendChild(particle);
+                    }
+                },
+                
+                // Validasi Tahun (BARU: Cek Dropdown)
+                validateYear() {
+                    const year = elements.yearSelect.value;
+                    if (year !== "") { // Cek apakah sudah dipilih (bukan value="" dari "Pilih tahun...")
+                        elements.yearError.style.display = 'none';
+                        return true;
+                    } else {
+                        elements.yearError.style.display = 'block';
+                        return false;
+                    }
+                },
+                
+                preloadAsset(url) {
+                    return new Promise((resolve, reject) => {
+                        if (!url) return resolve(null);
+                        const isAudio = /\.(mp3|wav|ogg)$/.test(url);
+                        if (isAudio) {
+                            const audio = new Audio();
+                            audio.src = url;
+                            audio.addEventListener('canplaythrough', () => resolve(url), { once: true });
+                            audio.onerror = () => reject(`Gagal memuat audio: ${url}`);
+                        } else {
+                            const img = new Image();
+                            img.src = url;
+                            img.onload = () => resolve(url);
+                            img.onerror = () => reject(`Gagal memuat gambar: ${url}`);
+                        }
+                    });
+                }
+            };
+
+            // ===================================================================
+            // LOGIKA AUDIO
+            // ===================================================================
+            const musicPlayer = {
+                init() {
+                    const track = appState.content.playlist[0];
+                    if (!track) return;
+                    appState.audioElement = document.getElementById('audio-element');
+                    appState.audioElement.src = track.path;
+                    
+                    elements.musicToggle.addEventListener('click', () => {
+                        if (appState.audioElement.paused) {
+                            this.play();
+                        } else {
+                            this.pause();
+                        }
+                    });
+                },
+                play() {
+                    if (!appState.audioElement) return;
+                    appState.audioElement.play().catch(e => console.error("Audio play failed:", e));
+                    elements.musicToggle.classList.add('playing');
+                    elements.musicToggle.innerHTML = '🎶';
+                },
+                pause() {
+                    if (appState.audioElement) appState.audioElement.pause();
+                    elements.musicToggle.classList.remove('playing');
+                    elements.musicToggle.innerHTML = '🎵';
+                }
+            };
+            
+            // ===================================================================
+            // RENDER FUNGSI (Untuk setiap "Halaman" Cerita)
+            // ===================================================================
+            const renderers = {
+                // Halaman 1: Ucapan (Dengan Kalkulasi Umur)
+                renderGreeting() {
+                    // --- Logika Perhitungan Umur (BARU) ---
+                    const today = new Date(); // Misal: 7 November 2025
+                    const birthYear = parseInt(appState.birthYear, 10);
+                    // Bulan di JS adalah 0-indexed (Jan=0, Nov=10)
+                    // Kita asumsikan ulang tahunnya 22 November
+                    const birthDateThisYear = new Date(today.getFullYear(), 10, 22); 
+                    
+                    let age = today.getFullYear() - birthYear;
+                    
+                    // Cek apakah ulang tahun tahun ini sudah lewat atau belum
+                    // Jika hari ini (7 Nov) LEBIH KECIL dari 22 Nov, umurnya dikurangi 1
+                    if (today < birthDateThisYear) {
+                        age--; 
+                    }
+                    // --- Selesai Logika Umur ---
+
+                    const greeting = `${appState.content.personalGreeting} Selamat Ulang Tahun ke-${age}!`;
+                    
+                    elements.storyContent.innerHTML = `
+                        <div class="story-step greeting-view">
+                            <h3 id="greeting-line"></h3>
+                            <p id="message-line"></p>
+                            <p id="personal-signature"></p>
+                        </div>
+                    `;
+                    
+                    (async () => {
+                        await utils.typewriter(document.getElementById('greeting-line'), greeting, 80);
+                        await utils.typewriter(document.getElementById('message-line'), appState.content.personalMessage, 40);
+                        document.getElementById('personal-signature').textContent = appState.content.personalSignature;
+                    })();
+                },
+                
+                // Halaman 2, 3, 4: Timeline
+                renderTimelineItem(item) {
+                    elements.storyContent.innerHTML = `
+                        <div class="story-step timeline-view">
+                            <h3>${item.title}</h3>
+                            <img src="${item.image}" alt="${item.title}">
+                            <p>${item.description}</p>
+                        </div>
+                    `;
+                },
+                
+                // Halaman 5: Galeri
+                renderGallery() {
+                    const imagesHtml = appState.content.galleryImages
+                        .map(src => `<img src="${src}" alt="Kenangan" class="gallery-image">`)
+                        .join('');
+                        
+                    elements.storyContent.innerHTML = `
+                        <div class="story-step gallery-view">
+                            <h3>${appState.content.galleryTitle}</h3>
+                            <div class="gallery-grid">${imagesHtml}</div>
+                        </div>
+                    `;
+                    
+                    document.querySelectorAll('.gallery-image').forEach(img => {
+                        img.addEventListener('click', (e) => {
+                            elements.lightbox.style.display = 'block';
+                            elements.lightboxImg.src = e.target.src;
+                        });
+                    });
+                },
+                
+                // Halaman Terakhir
+                renderFinalMessage() {
+                    elements.storyContent.innerHTML = `
+                        <div class="story-step greeting-view" style="padding-top: 4rem;">
+                            <dotlottie-wc
+                                src="https://lottie.host/5f089ce5-d66c-4b52-91cb-292456503ce2/PTf0Sn1cF8.lottie"
+                                style="width: 250px; height: 250px; margin: -2rem auto 0;"
+                                speed="1"
+                                autoplay
+                                loop>
+                            </dotlottie-wc>
+                            <h3 style="font-size: 1.8rem;">${appState.content.finalMessage}</h3>
+                        </div>
+                    `;
+                    utils.triggerConfetti();
+                }
+            };
+            
+            // ===================================================================
+            // NAVIGASI UTAMA
+            // ===================================================================
+            
+            function buildStorySteps() {
+                appState.storySteps = [];
+                appState.storySteps.push(renderers.renderGreeting);
+                appState.content.timelineItems.forEach(item => {
+                    appState.storySteps.push(() => renderers.renderTimelineItem(item));
+                });
+                appState.storySteps.push(renderers.renderGallery);
+                appState.storySteps.push(renderers.renderFinalMessage);
+            }
+
+            function renderCurrentStep() {
+                const stepFunction = appState.storySteps[appState.currentStep];
+                if (stepFunction) {
+                    stepFunction();
+                }
+                elements.prevBtn.disabled = (appState.currentStep === 0);
+                elements.nextBtn.disabled = (appState.currentStep === appState.storySteps.length - 1);
+            }
+
+            // ===================================================================
+            // PROSES INISIALISASI
+            // ===================================================================
+
+            function initWelcomeScreen() {
+                elements.clickableElement.addEventListener('click', handleGiftClick);
+                elements.yearSelect.addEventListener('input', utils.validateYear);
+            }
+            
+            async function handleGiftClick() {
+                if (!utils.validateYear()) { // Pakai validator tahun dropdown
+                    elements.yearSelect.focus();
+                    return; 
+                }
+                
+                appState.birthYear = elements.yearSelect.value; // Simpan tahun yang dipilih
+
+                elements.welcomeScreen.style.opacity = '0';
+                elements.welcomeScreen.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    elements.welcomeScreen.style.display = 'none';
+                    elements.loadingScreen.style.display = 'flex';
+                    elements.loadingScreen.style.opacity = '1';
+                }, 500);
+
+                await preloadAllAssets();
+            }
+
+            async function preloadAllAssets() {
+                try {
+                    const response = await fetch('content.json');
+                    if (!response.ok) throw new Error('Gagal memuat content.json');
+                    appState.content = await response.json();
+
+                    const assetsToLoad = [
+                        ...(appState.content.playlist || []).map(track => track.path),
+                        ...(appState.content.galleryImages || []),
+                        ...(appState.content.timelineItems || []).map(item => item.image).filter(Boolean),
+                        ...(appState.content.playlist || []).map(track => track.artwork),
+                    ];
+                    
+                    const uniqueAssets = [...new Set(assetsToLoad)].filter(Boolean);
+                    await Promise.all(uniqueAssets.map(utils.preloadAsset));
+                    
+                } catch (error) {
+                    console.error('Gagal memuat aset:', error);
+                } finally {
+                    setTimeout(startApplication, 1000); 
+                }
+            }
+            
+            function startApplication() {
+                elements.storyTitle.textContent = appState.content.storyTitle || "Sebuah Cerita";
+                utils.createBgParticles();
+                buildStorySteps();
+                musicPlayer.init();
+                
+                elements.loadingScreen.style.opacity = '0';
+                elements.loadingScreen.style.transform = 'scale(0.9)';
+                setTimeout(() => {
+                    elements.loadingScreen.style.display = 'none';
+                    elements.mainContent.style.display = 'block';
+                    elements.mainContent.style.opacity = '1';
+                    elements.mainContent.style.transform = 'scale(1)';
+                    renderCurrentStep();
+                    musicPlayer.play();
+                }, 500);
+            }
+            
+            // Listener untuk navigasi
+            elements.nextBtn.addEventListener('click', () => {
+                if (appState.currentStep < appState.storySteps.length - 1) {
+                    appState.currentStep++;
+                    renderCurrentStep();
+                }
+            });
+            
+            elements.prevBtn.addEventListener('click', () => {
+                if (appState.currentStep > 0) {
+                    appState.currentStep--;
+                    renderCurrentStep();
+                }
+            });
+            
+            // Listener untuk Lightbox
+            elements.lightboxClose.addEventListener('click', () => {
+                elements.lightbox.style.display = 'none';
+            });
+            elements.lightbox.addEventListener('click', (e) => {
+                if (e.target === elements.lightbox) elements.lightbox.style.display = 'none';
+            });
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Escape') elements.lightbox.style.display = 'none';
+            });
+
+            // Jalankan!
+            initWelcomeScreen();
+        });
+    </script>
+
+</body>
+</html>

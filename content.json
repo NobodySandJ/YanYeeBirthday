@@ -1,0 +1,42 @@
+{
+    "personalGreeting": "YanYee, HBD Yaa!",
+    "personalMessage": "Selamat ulang tahun, YanYee! 💖 Kamu itu seperti malaikat yang selalu bawa kebahagiaan (dan cookies!). Semoga hari ini semanis kamu dan penuh warna pink! Selalu jadi cahaya buat semua orang ya! 😇🍪",
+    "personalSignature": "From your biggest fan 💌",
+    "timelineItems": [
+        {
+            "year": "Tahun ????",
+            "title": "Misi Dimulai",
+            "description": "Seorang malaikat diturunkan ke bumi untuk menyebarkan kebahagiaan. (Itu kamu!)",
+            "image": "assets/img/angel.webp"
+        },
+        {
+            "year": "Tahun ????",
+            "title": "Penemuan Cookies",
+            "description": "Kamu menemukan bahwa cookies adalah sumber kebahagiaan utama di dunia (setelah kamu, tentunya).",
+            "image": "assets/img/cookies.webp"
+        },
+        {
+            "year": "Hari Ini",
+            "title": "Level Up! 🎂",
+            "description": "Selamat ulang tahun! Semoga semua keinginanmu terkabul hari ini. Kamu hebat!",
+            "image": "assets/img/birthday_cake.webp"
+        }
+    ],
+    "galleryImages": [
+        "assets/img/yan_1.webp",
+        "assets/img/yan_2.webp",
+        "assets/img/yan_3.webp",
+        "assets/img/yan_4.webp",
+        "assets/img/yan_5.webp",
+        "assets/img/yan_6.webp"
+    ],
+    "videos": [],
+    "playlist": [
+        {
+            "title": "Namida Suprise",
+            "artist": "JKT48",
+            "path": "assets/audio/JKT48 - Namida Surprise (cut).mp3",
+            "artwork": "assets/img/Namidajkt.webp"
+        }
+    ]
+}
